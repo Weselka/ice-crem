@@ -1,0 +1,67 @@
+.teams-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-item-gap);
+  list-style: none;
+}
+
+.teams-object {
+  width: 100%;
+  background-color: var(--primary-bgc);
+
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+}
+
+.teams-subject {
+  overflow-x: hidden;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
+}
+
+.teams-soc-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.teams-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.teams-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  color: var(--subgect-color);
+
+  transition: background-color var(--transition), color var(--transition);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--more-text-color);
+    outline: transparent;
+  }
+}
+
+.teams-soc-icon {
+  fill: currentColor;
+}
